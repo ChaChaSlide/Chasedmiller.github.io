@@ -1,0 +1,62 @@
+body, html{
+	height: 100%;
+}
+
+
+.bg{
+	height:100%;
+	background-image: url('images/phone.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	
+}
+#contact{
+	width: 400px;
+	height: 400px;
+}
+#contact > *{
+	display: inline-grid;
+	padding-left: 20px;
+	margin: 10% 0%;
+	width:100%;
+	font-size: 200%;
+	color: black;
+	animation: fadein 3s;
+	animation-name: bounceInLeft;	
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}

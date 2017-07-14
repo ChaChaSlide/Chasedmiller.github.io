@@ -1,0 +1,64 @@
+body, html{
+	height: 100%;
+}
+
+
+.bg{
+	height:100%;
+	background-image: url('images/apple.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+	
+}
+
+.about {
+	color: white;
+	text-align: center; 
+	margin-top: 200px;
+	position: relative;
+}
+
+.about h1{
+	transform: translate(0, -100px);
+	font-family: 'Great Vibes', cursive;
+	padding-bottom:50px; 
+	color: white;
+	position: relative;
+}
+.controls li{
+
+	display: inline-block;
+	width: 15%;
+	font-size: 200%;
+}
+#controls a{
+	color:white !important;
+}
+.controls li:hover{
+	-webkit-animation: bounce 1s;
+    animation: bounce 1s
+}
+
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
